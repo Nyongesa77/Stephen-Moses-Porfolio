@@ -76,5 +76,25 @@ sr.reveal('.contact__input', {delay: 400})
 sr.reveal('.contact__button', {delay: 600})
 
 
+// FORM SUBMISSION 
+
+document.querySelector(".contact__form").addEventListener("submit", function(e){
+    e.preventDefault(); // prevents page from reloading on form submit  
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+
+    if (name == "" || email == "" || message == ""){    
+        alert("Todos los campos son obligatorios");
+    } else {                
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST","mail.php", true);
+        xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        xhr.send("name=" + name + "&email=" + email + "&message=" + message);                
+        document.getElementById("contact").reset();        
+        alert("Mensaje enviado correctamente!");   
+        }
+
+
 
 

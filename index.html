@@ -3,6 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property = "og:title" content=" Stephen Moses Nyongesa">
+        <meta property = "og:description"  content=" Welcome to my Portfolio : Stephen Moses Nyongesa">
+        <meta property = "og:image" content=".assets/mostin.jpg">
+        
 
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="style.css">
@@ -62,11 +66,11 @@
                     <div>
                         <h2 class="about__subtitle">I am Stephen Moses</h2>
                         <span class="about__profession">Web designer</span>
-                        <p class="about__text">Am  a web designer building modern websites and apps for your business</p>
+                        <p class="about__text">Am  a passionate and dedicated Salesforce Admin and Developer. With a solid foundation in Salesforce, I excel at : <b>Salesforce Configuration</b>, <b>Apex Programming</b>,<b>Developing custom components using LWC</b>, <b>Data Management</b>, <b>Integration  using Apex</b>, <b>Security Management</b>, <b>Problem-Solving and Analytical Skills</b>, <b>Communication Skills and </b>, <b>Testing and Debugging of Salesforce configurations and customizations.</b>  </p>
 
                         <div class="about__social">
                             <a href="#" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
-                            <a href="#" class="about__social-icon"><i class='bx bxl-github' ></i></a>
+                            <a href="https://github.com/Nyongesa77" class="about__social-icon"><i class='bx bxl-github' ></i></a>
                             <a href="#" class="about__social-icon"><i class='bx bxl-dribbble' ></i></a>
                         </div>
                     </div>
@@ -80,10 +84,11 @@
                 <div class="skills__container bd-grid">
                     <div class="skills__box">
                         <h3 class="skills__subtitle">Development</h3>
+                        <span class="skills__name">Salesforce</span>
                         <span class="skills__name">Html</span>
                         <span class="skills__name">Css</span>
                         <span class="skills__name">Javascript</span>
-                         <span class="skills__name">React</span>
+
                         <h3 class="skills__subtitle">Design</h3>
                         <span class="skills__name">Figma</span>
                     
@@ -101,10 +106,10 @@
 
                 <div class="portfolio__container bd-grid">
                     <div class="portfolio__img">
-                        <img src="assets/img/work1.jpg" alt="">
+                        <img src="assets/img/salesforce logo.png" alt="">
 
                         <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
+                            <a href="https://www.salesforce.com/trailblazer/mmtall" class="portfolio__link-name">View details</a>
                         </div>
                     </div>
                     <div class="portfolio__img">
@@ -161,13 +166,13 @@
                         <span class="contact__text">Nairobi,Kenya</span>
                     </div>
 
-                    <form action="" class="contact__form">
+                    <form action="get" class="contact__form">
                         <div class="contact__inputs">
-                            <input type="text" placeholder="Name" class="contact__input">
-                            <input type="mail" placeholder="Email" class="contact__input">
+                            <input autocomplete="off" autofocus name="Email" type="text" placeholder="Name" class="contact__input">
+                            <input type="email" placeholder="Email" class="contact__input">
                         </div>
 
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <textarea name="message" required id="message" cols="1" rows="10" class="contact__input"></textarea>
 
                         <input type="submit" value="submit" class="contact__button">
                     </form>
